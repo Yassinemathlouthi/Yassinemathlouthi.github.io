@@ -15,7 +15,7 @@
                 <li><a href="#">About</a></li>
                 <li><a href="#">Skills</a></li>
                 <li><a href="#">Works</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">Contacts</a></li>
             </ul>
         </nav>
     </header>
@@ -23,7 +23,17 @@
     <section class="hero">
         <div class="intro">
             <h1>Hi, I'm <span>Yassine</span><br>DSI23 Studient</h1>
-            <button>Contact</button>
+            <button id="downloadBtn">   CV   </button>
+            <script>
+                
+                document.getElementById("downloadBtn").addEventListener("click", function () {
+                    const link = document.createElement("a");
+                    link.href = "cv_page-0001.jpg";
+                    link.download = "cv_page-0001.jpg";
+                    link.click();
+                });
+                
+            </script>
         </div>
         <div class="picture">
             <img src="photo.jpg" alt="Profile Picture">
